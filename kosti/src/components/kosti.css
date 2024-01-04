@@ -1,0 +1,22 @@
+.Kosti_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Vivod_kosti {
+    margin-bottom: 20px;
+  }
+  
+  .Kosti_photo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .re {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
