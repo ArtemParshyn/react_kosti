@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Kosti from "./components/Kosti";
+import Dice from "./components/Dice";
 
 function App() {
   const images = [
@@ -11,15 +11,18 @@ function App() {
     "/images/dice 6.jpg"
   ];
 
-  const [randomNumber, setRandomNumber] = useState(null);
+  const [randomNumber, setRandomNumber] = useState(1);
 
-  function re() {
+
+  function handleClick() {
+  setRandomNumber(prevRandomNumber => {
     const newRandomNumber = Math.floor(Math.random() * 6);
     console.log(images[newRandomNumber]);
-    setRandomNumber(newRandomNumber);
-  }
+    return newRandomNumber;
+  });
+}
 
-  return <Kosti images={images} randomNumber={randomNumber} re={re} />;
+  return <Dice images={images} randomNumber={randomNumber} handleClick={handleClick} />;
 }
 
 export default App;

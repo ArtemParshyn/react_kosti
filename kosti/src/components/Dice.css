@@ -1,14 +1,14 @@
-.Kosti_div {
+.dice_div {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  .Vivod_kosti {
+  .Vivod_dice {
     margin-bottom: 20px;
   }
   
-  .Kosti_photo {
+  .dice_photo {
     width: 100px;
     height: 100px;
   }
